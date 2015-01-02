@@ -1,0 +1,15 @@
+[user]
+	name = Gilberto Leon
+	email = ripflame@gmail.com
+[alias]
+  co = checkout
+  ca = commit -am
+  c = commit -m
+  s = status
+  b = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[core]
+	excludesfile = /Users/Gilberto/.gitignore_global
+	editor = mvim -f
+[push]
+	default = simple
