@@ -10,7 +10,7 @@ Personal macOS dotfiles, managed with [GNU Stow](https://www.gnu.org/software/st
 ## Install on a fresh machine
 
 ```sh
-git clone <this-repo-url> ~/.dotfiles
+git clone https://github.com/ripflame/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./install.sh
 ```
