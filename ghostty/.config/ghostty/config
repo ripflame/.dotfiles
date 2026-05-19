@@ -1,0 +1,14 @@
+font-size = 18
+font-family = SauceCodePro Nerd Font
+keybind = global:alt+shift+enter=toggle_visibility
+keybind = global:alt+shift+space=toggle_quick_terminal
+theme = light:Rose Pine Dawn,dark:Rose Pine
+keybind = shift+enter=text:\x1b\r
+keybind = cmd+p=text:\x1bp
+keybind = cmd+t=text:\x1bt
+confirm-close-surface = false
+working-directory = home
+
+# Frosted glass transparency effect
+#background-opacity = 0.90
+#background-blur-radius = 50

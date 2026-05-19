@@ -1,0 +1,14 @@
+.DS_Store
+*.bak
+*.bk
+*.bk[0-9]*
+*.swp
+*.swo
+__pycache__/
+*.pyc
+
+# Per-machine git identity, written by install.sh
+.gitconfig.local
+
+# OMZ-managed metadata that lands inside stowed dirs
+.claude/

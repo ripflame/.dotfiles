@@ -1,0 +1,318 @@
+## Node.js Specific
+node_modules/
+npm-debug.log
+npm-debug.log.*
+.npm/
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+## Electron Specific
+.electron-builder.env
+.electron/
+electron-builder.env
+electron/dist/
+electron/build/
+out/
+dist_electron/
+release/
+app/dist/
+.webpack/
+renderer.js.map
+main.js.map
+preload.js.map
+
+## Environment Files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+
+## NetBeans Specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+## OSX Specific
+.DS_Store
+.AppleDouble
+.LSOverride
+# Icon must end with two \r
+Icon
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+## Additional Linux specific
+.directory
+.fuse_hidden*
+.nfs*
+*.swp
+.Trash-*
+.fseventsd
+*~
+
+## Additional Windows specific
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+*.bak
+*.tmp
+*.log
+
+## Sublime Text Specific
+# workspace files are user-specific
+*.sublime-workspace
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+#sftp configuration file
+sftp-config.json
+
+## VS Code Specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+.ionide
+
+## JetBrains IDEs (WebStorm, IntelliJ, etc)
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+out/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+## Xcode Specific
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.xcuserstate
+
+## VIM Specific
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+## Neovim Specific
+.nvimlog
+.nviminfo
+.local/share/nvim/
+.config/nvim/plugged/
+.config/nvim/plugin/
+.config/nvim/spell/
+
+## Build and Package Manager Specific
+.cache/
+.parcel-cache/
+.nuxt/
+.nitro/
+.output/
+.vercel/
+.next/
+.turbo/
+.vuepress/dist
+.docusaurus/
+dist/
+coverage/
+.nyc_output/
+.eslintcache
+.stylelintcache
+bower_components/
+jspm_packages/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.webpack/
+.svelte-kit/
+
+## Logs and databases
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+logs/
+log/
+debug/
+
+## Compiled output and binaries
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.dylib
+*.out
+
+## Dependency directories and files
+vendor/
+.bundle/
+**/CVS/
+**/.hg/
+**/.svn/
+**/.git/
+**/bin/
+**/obj/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+# Usually creates a /dist/ folder & *.spec file
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pylint
+.pylint.d/
+
+# pytype
+.pytype/
+
+# Pyre
+.pyre/
+
+# pyright
+typings/
+
+# Testing
+.coverage
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and local stuff
+*.log
+*.pot
+*.mo
+
+# Secrets (optional, if you ever use this naming)
+*.env
+.env.*
+.claude/
+CLAUDE.md
+
+# Profiling
+.prof
+
+# Others
+__pypackages__/

@@ -1,0 +1,24 @@
+user: 139              # iris - works on both
+group: 67              # foam - cyan-ish, good contrast both ways
+permission:
+  read: 67             # foam
+  write: 132           # love/rose - muted enough for light, visible on dark
+  exec: 139            # iris
+  exec-sticky: 139
+  no-access: 245
+date:
+  hour-old: 174        # rose
+  day-old: 179         # gold
+  older: 103           # muted purple
+size:
+  none: 245
+  small: 103           # subtle
+  medium: 139          # iris
+  large: 132           # love
+inode:
+  valid: 67
+  invalid: 245
+links:
+  valid: 67
+  invalid: 132
+tree-edge: 103

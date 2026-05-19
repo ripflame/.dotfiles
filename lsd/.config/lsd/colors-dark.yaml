@@ -1,0 +1,24 @@
+user: 183              # iris - lavender
+group: 152             # foam - light blue
+permission:
+  read: 152            # foam
+  write: 204           # love
+  exec: 183            # iris
+  exec-sticky: 183
+  no-access: 245
+date:
+  hour-old: 217        # rose
+  day-old: 222         # gold
+  older: 60            # muted
+size:
+  none: 245
+  small: 146           # subtle
+  medium: 183          # iris
+  large: 204           # love
+inode:
+  valid: 152
+  invalid: 245
+links:
+  valid: 152
+  invalid: 204
+tree-edge: 60
