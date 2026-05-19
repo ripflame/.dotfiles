@@ -1,7 +1,3 @@
-# Apple Silicon Homebrew configuration
-if [[ -f "/opt/homebrew/bin/brew" ]]; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -80,36 +76,9 @@ gc() {
   esac
 }
 
-# Apple Silicon Homebrew first, then your custom paths, then Intel as fallback
-export PATH="$HOME/go/bin:$HOME/.local/bin:/opt/local/bin:$PATH"
-export MANPATH="/opt/homebrew/share/man:$MANPATH"
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
-
 # Source alias files
 if [ -f ~/.secrets ]; then
   source ~/.secrets
-fi
-
-# Fix locale settings
-export LANG="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8"
-export LC_CTYPE="en_US.UTF-8"
-
-# Auto-start tmux if not already inside one
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-  if [[ -n "$SSH_CONNECTION" ]]; then
-    tmux new-session -As ssh
-  elif [[ "$TERM_PROGRAM" == "vscode" ]]; then
-    tmux new-session -As cursor
-  else
-    tmux new-session -As main
-  fi
 fi
 
 export NVM_DIR="$HOME/.nvm"
