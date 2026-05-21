@@ -30,7 +30,7 @@ Override the nvm version with `NVM_VERSION=v0.40.2 ./install.sh` (default is `v0
 
 | Package      | Brew deps                                                                  | Targets |
 |--------------|----------------------------------------------------------------------------|---------|
-| `zsh`        | —                                                                          | `~/.zshrc`, `~/.zprofile` |
+| `zsh`        | —                                                                          | `~/.zshrc` |
 | `git`        | `git`, `git-delta`                                                         | `~/.gitconfig`, `~/.gitignore_global`, `~/.config/git/ignore` |
 | `nvim`       | `neovim`, `fzf`, `bat`, `fd`, `ripgrep`, `tree-sitter`, `lua`, `fswatch`, `deno` | `~/.config/nvim/` |
 | `tmux`       | `tmux` + `tpm`                                                             | `~/.tmux.conf` |
