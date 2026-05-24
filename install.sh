@@ -139,7 +139,8 @@ stow_pkg() {
           src="$HOME/$rel"
           dst="$BACKUP_DIR/$rel"
           mkdir -p "$(dirname "$dst")"
-          mv -v "$src" "$dst"
+          cp -RLv "$src" "$dst"
+          rm -f "$src"
         done
   fi
   if stow -d "$DOTFILES_DIR" -t "$HOME" "$pkg" >/dev/null 2>&1; then
