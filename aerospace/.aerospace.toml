@@ -127,6 +127,10 @@ run = 'layout floating'
 if.app-id = 'com.apple.iCal'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.granola.app'
+run = 'layout floating'
+
 # 'main' binding mode declaration
 [mode.main.binding]
     # Terminal shortcut - focuses existing Terminal or opens new one
@@ -139,6 +143,7 @@ run = 'layout floating'
     alt-s = 'exec-and-forget open -a Spotify'
     # alt-z = 'exec-and-forget open -a "zoom.us"'
     alt-r = 'exec-and-forget open -a Finder'
+    alt-g = 'exec-and-forget /Users/gilberto.e.leon/.dotfiles/aerospace/granola-summon.sh'
 
     # Layout switching
     alt-slash = 'layout tiles horizontal vertical'

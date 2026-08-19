@@ -151,3 +151,7 @@ _fzf_compgen_dir() {
 source ~/fzf-git.sh/fzf-git.sh
 
 eval $(thefuck --alias)
+
+# >>> hookless >>>
+[ -f "$HOME/.hookless/shell-wrapper.sh" ] && source "$HOME/.hookless/shell-wrapper.sh"
+# <<< hookless <<<

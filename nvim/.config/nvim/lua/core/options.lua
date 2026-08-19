@@ -51,13 +51,10 @@ vim.g.netrw_winsize = 25         -- 25% of window
 vim.g.netrw_keepdir = 0          -- Keep current directory synced
 vim.g.netrw_fastbrowse = 0       -- Disable fast browsing
 
--- Prose-friendly settings for documentation file types
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "markdown", "text", "gitcommit", "help", "man", "rst", "asciidoc", "org" },
-  callback = function()
-    vim.opt_local.colorcolumn = ""
-    vim.opt_local.wrap = true
-    vim.opt_local.linebreak = true
-    vim.opt_local.breakindent = true
-  end,
-})
+-- Disable colorcolumn for prose and documentation file types
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = { "markdown", "text", "gitcommit", "help", "man", "rst", "asciidoc", "org" },
+--   callback = function()
+--     vim.opt_local.colorcolumn = ""
+--   end,
+-- })
