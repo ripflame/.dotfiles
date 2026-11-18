@@ -36,10 +36,19 @@ return {
   -- Auto dark mode integration
   {
     "f-person/auto-dark-mode.nvim",
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
+    config = function()
+      if vim.uv.os_uname().sysname == "Darwin" then
+        local interval = require("auto-dark-mode.interval")
+        local start = interval.start
+        interval.start = function(options, state)
+          state.query_command = {
+            "sh", "-c",
+            [[[ "$(osascript -e 'tell application "System Events" to tell appearance preferences to get dark mode')" = true ] && echo Dark]],
+          }
+          start(options, state)
+        end
+      end
+      require("auto-dark-mode").setup({})
+    end,
   },
 }

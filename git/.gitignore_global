@@ -316,3 +316,5 @@ CLAUDE.md
 
 # Others
 __pypackages__/
+
+**/.claude/settings.local.json
