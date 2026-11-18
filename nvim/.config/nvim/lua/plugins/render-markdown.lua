@@ -8,6 +8,7 @@ return {
 		config = function()
 			require("render-markdown").setup({
 				code = {
+					border = "thin",
 					language_border = " ",
 					highlight = "RenderMarkdownCode",
 				},

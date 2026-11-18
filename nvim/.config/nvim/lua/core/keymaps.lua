@@ -52,6 +52,8 @@ map("n", ";;", "A;<ESC>", { desc = "Append semicolon at end of line" })
 map("n", "<leader>t", ":%s/\\s\\+$//<CR>", { desc = "Trim trailing whitespace" })
 map("n", "<leader>cd", ":cd %:h<CR>", { desc = "Change CWD to current file's WD" })
 map("n", "<A-z>", function() vim.opt.wrap = not vim.o.wrap end, { desc = "Toggle line wrap" })
+map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, desc = "Down by screen line" })
+map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, desc = "Up by screen line" })
 
 -- Snippets mappings
 local ls = require("luasnip")
