@@ -23,7 +23,7 @@ return {
 				pipe_table = { cell = "trimmed" },
 				completions = { lsp = { enabled = true } },
 				win_options = { wrap = { default = true, rendered = true } },
-				-- anti_conceal = { enabled = false },
+				anti_conceal = { enabled = false },
 			})
 		end,
 	},
