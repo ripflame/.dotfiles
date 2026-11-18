@@ -21,9 +21,11 @@ vim.opt.number = true         -- Show line numbers
 vim.opt.relativenumber = true -- Show relative line numbers
 vim.opt.cursorline = true     -- Highlight current line
 vim.opt.wrap = false          -- Disable line wrapping
+vim.opt.linebreak = true      -- Wrap at word boundaries when wrap is on
+vim.opt.breakindent = true    -- Keep indentation on wrapped lines
 vim.opt.mouse = "a"           -- Enable mouse support in all modes
 vim.opt.scrolloff = 8         -- Scroll window 8 lines away
-vim.o.colorcolumn = "100"      -- Keep prose at readable lengths
+vim.o.colorcolumn = "100"      -- Mark the code line-length limit
 
 -- Indentation settings
 vim.opt.tabstop = 2        -- Width of a tab character
