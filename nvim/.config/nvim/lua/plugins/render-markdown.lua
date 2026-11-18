@@ -6,14 +6,6 @@ return {
 			"echasnovski/mini.nvim",
 		},
 		config = function()
-			local win = require("render-markdown.lib.env").win
-			local win_width = win.width
-			win.width = function(id)
-				local width = win_width(id)
-				local cc = tonumber(vim.wo[id].colorcolumn:match("^%d+"))
-				return cc and math.min(width, cc - 1) or width
-			end
-
 			require("render-markdown").setup({
 				code = {
 					language_border = " ",
